@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD599CFD286B635800FC9FB4 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD599CFC286B635800FC9FB4 /* Roboto-Medium.ttf */; };
 		DD7D487B28645185000C8F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D487A28645185000C8F7D /* AppDelegate.swift */; };
 		DD7D487D28645185000C8F7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D487C28645185000C8F7D /* SceneDelegate.swift */; };
 		DD7D487F28645185000C8F7D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D487E28645185000C8F7D /* HomeViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD599CFC286B635800FC9FB4 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		DD7D487728645185000C8F7D /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7D487A28645185000C8F7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD7D487C28645185000C8F7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD599CFB286B633500FC9FB4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DD599CFC286B635800FC9FB4 /* Roboto-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		DD7D486E28645185000C8F7D = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +157,7 @@
 				DD7D487A28645185000C8F7D /* AppDelegate.swift */,
 				DD7D487C28645185000C8F7D /* SceneDelegate.swift */,
 				DD7D48B528671F84000C8F7D /* GoogleService-Info.plist */,
+				DD599CFB286B633500FC9FB4 /* Fonts */,
 				DD7D48C528685902000C8F7D /* Services */,
 			);
 			path = Resources;
@@ -277,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD599CFD286B635800FC9FB4 /* Roboto-Medium.ttf in Resources */,
 				DD7D488728645186000C8F7D /* LaunchScreen.storyboard in Resources */,
 				DD7D488428645186000C8F7D /* Assets.xcassets in Resources */,
 				DD7D48B628671F84000C8F7D /* GoogleService-Info.plist in Resources */,
