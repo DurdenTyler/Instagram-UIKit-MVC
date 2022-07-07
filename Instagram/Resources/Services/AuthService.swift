@@ -31,13 +31,20 @@ class AuthService {
     }
     
     
-    func signIn(data: UserModel, completion: @escaping (Result<User, Error>)->()) {
-        auth.signIn(withEmail: data.email, password: data.password) { [weak self] result, error in
-            if let result = result {
-                completion(.success(result.user))
-            } else if let error = error  {
-                completion(.failure(error))
+    func signIn(email: String?, username: String?, phoneNumber: String?, password: String, completion: @escaping (Result<User, Error>)->()) {
+        
+        if let email = email {
+            auth.signIn(withEmail: email, password: password) { [weak self] result, error in
+                if let result = result {
+                    completion(.success(result.user))
+                } else if let error = error  {
+                    completion(.failure(error))
+                }
             }
+        } else if let username = username {
+            // username log in
+        } else if let phoneNumber = phoneNumber {
+            // phoneNumber log in
         }
     }
 }

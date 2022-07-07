@@ -4,6 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>SFProDisplay-Bold.otf</string>
+		<string>SFProDisplay-Semibold.otf</string>
+		<string>SFProDisplay-Light.otf</string>
 		<string>Roboto-Medium.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>

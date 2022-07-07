@@ -39,6 +39,9 @@
 		DD7D48C9286859F4000C8F7D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D48C8286859F4000C8F7D /* UserModel.swift */; };
 		DD7D48CB28685B35000C8F7D /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D48CA28685B35000C8F7D /* FirestoreService.swift */; };
 		DD7D48CD28685CCC000C8F7D /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D48CC28685CCC000C8F7D /* StorageService.swift */; };
+		DDF706C82876C623004901D7 /* SFProDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DDF706C62876C623004901D7 /* SFProDisplay-Light.otf */; };
+		DDF706C92876C623004901D7 /* SFProDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DDF706C72876C623004901D7 /* SFProDisplay-Semibold.otf */; };
+		DDF706CB2876C783004901D7 /* SFProDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DDF706CA2876C783004901D7 /* SFProDisplay-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,9 @@
 		DD7D48C8286859F4000C8F7D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		DD7D48CA28685B35000C8F7D /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		DD7D48CC28685CCC000C8F7D /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		DDF706C62876C623004901D7 /* SFProDisplay-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Light.otf"; sourceTree = "<group>"; };
+		DDF706C72876C623004901D7 /* SFProDisplay-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Semibold.otf"; sourceTree = "<group>"; };
+		DDF706CA2876C783004901D7 /* SFProDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,9 @@
 		DD599CFB286B633500FC9FB4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				DDF706CA2876C783004901D7 /* SFProDisplay-Bold.otf */,
+				DDF706C72876C623004901D7 /* SFProDisplay-Semibold.otf */,
+				DDF706C62876C623004901D7 /* SFProDisplay-Light.otf */,
 				DD599CFC286B635800FC9FB4 /* Roboto-Medium.ttf */,
 			);
 			path = Fonts;
@@ -288,8 +297,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF706C92876C623004901D7 /* SFProDisplay-Semibold.otf in Resources */,
 				DD599CFD286B635800FC9FB4 /* Roboto-Medium.ttf in Resources */,
+				DDF706C82876C623004901D7 /* SFProDisplay-Light.otf in Resources */,
 				DD7D488728645186000C8F7D /* LaunchScreen.storyboard in Resources */,
+				DDF706CB2876C783004901D7 /* SFProDisplay-Bold.otf in Resources */,
 				DD7D488428645186000C8F7D /* Assets.xcassets in Resources */,
 				DD7D48B628671F84000C8F7D /* GoogleService-Info.plist in Resources */,
 			);
