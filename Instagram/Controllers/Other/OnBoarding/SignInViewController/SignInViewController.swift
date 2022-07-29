@@ -26,7 +26,7 @@ class SignInViewController: UIViewController {
         textfield.textColor = .darkText
         textfield.layer.cornerRadius = 5
         textfield.clearButtonMode = .always
-        textfield.returnKeyType = .done
+        textfield.returnKeyType = .next
         textfield.borderStyle = .roundedRect
         textfield.font = UIFont(name: "SFProDisplay-Light", size: 15)
         textfield.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textfield.frame.height))
@@ -43,7 +43,7 @@ class SignInViewController: UIViewController {
         textfield.textColor = .darkText
         textfield.layer.cornerRadius = 5
         textfield.clearButtonMode = .always
-        textfield.returnKeyType = .done
+        textfield.returnKeyType = .go
         textfield.borderStyle = .roundedRect
         textfield.font = UIFont(name: "SFProDisplay-Light", size: 15)
         textfield.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textfield.frame.height))
@@ -52,6 +52,8 @@ class SignInViewController: UIViewController {
         textfield.isSecureTextEntry = true
         return textfield
     }()
+    
+    private var mean = "next"
     
     private let button_forgetPass: UIButton = {
         let button = UIButton(type: .system)
@@ -70,7 +72,7 @@ class SignInViewController: UIViewController {
         button.titleLabel?.font = UIFont(name: "Roboto-Medium", size: 15)
         button.tintColor = .white
         button.layer.cornerRadius = 5
-        button.backgroundColor = #colorLiteral(red: 0.4705882353, green: 0.7543902329, blue: 0.9803921569, alpha: 1)
+        button.backgroundColor = .specialLightBlue
         button.addTarget(self, action: #selector(signIn), for: .touchUpInside)
         return button
     }()
@@ -150,6 +152,11 @@ class SignInViewController: UIViewController {
         setDelegates()
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        buttonConfigure()
+    }
+    
     private func setDelegates() {
         textField_login.delegate = self
         textField_password.delegate = self
@@ -199,7 +206,7 @@ class SignInViewController: UIViewController {
     }
     
     @objc private func func_SignUp() {
-        let vc = SignUpViewController()
+        let vc = SignUpViewController1()
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
     }
@@ -224,18 +231,13 @@ class SignInViewController: UIViewController {
             phoneNumber = login
             
         }
-        
-        authService.signIn(email: email, username: username, phoneNumber: phoneNumber, password: password) { result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let user):
-                    self.dismiss(animated: true, completion: nil)
-                case .failure(let error):
-                    let alert = UIAlertController(title: "Ошибка входа", message: "Мы не можем залогинить тебя", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Скрыть", style: .cancel, handler: nil))
-                    self.present(alert, animated: true)
-                }
-            }
+    }
+    
+    private func buttonConfigure() {
+        if textField_login.text != "" && textField_password.text != "" {
+            button_signIn.backgroundColor = .specialActiveBlue
+        } else {
+            button_signIn.backgroundColor = .specialLightBlue
         }
     }
 }
@@ -333,8 +335,15 @@ extension SignInViewController {
 // MARK: UITextFieldDelegate
 extension SignInViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField_login.resignFirstResponder()
-        return textField_password.resignFirstResponder()
+        if mean == "next" {
+            textField_password.becomeFirstResponder()
+        } else if mean == "go" {
+            let vc = SignUpViewController1()
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
+        }
+        mean = "go"
+        return true
     }
 }
 

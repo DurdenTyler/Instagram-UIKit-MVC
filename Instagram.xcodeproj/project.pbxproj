@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DD599CFD286B635800FC9FB4 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD599CFC286B635800FC9FB4 /* Roboto-Medium.ttf */; };
+		DD5EC428288569110070B327 /* SignUpViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5EC427288569110070B327 /* SignUpViewController3.swift */; };
+		DD5EC42A288576E30070B327 /* SignUpViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5EC429288576E30070B327 /* SignUpViewController1.swift */; };
+		DD5EC42E2885A6FF0070B327 /* PickerAndTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5EC42D2885A6FF0070B327 /* PickerAndTextfield.swift */; };
 		DD7D487B28645185000C8F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D487A28645185000C8F7D /* AppDelegate.swift */; };
 		DD7D487D28645185000C8F7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D487C28645185000C8F7D /* SceneDelegate.swift */; };
 		DD7D487F28645185000C8F7D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D487E28645185000C8F7D /* HomeViewController.swift */; };
@@ -18,7 +21,7 @@
 		DD7D489828645430000C8F7D /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D489728645430000C8F7D /* NotificationsViewController.swift */; };
 		DD7D489A28645470000C8F7D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D489928645470000C8F7D /* ProfileViewController.swift */; };
 		DD7D489F28645536000C8F7D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D489E28645536000C8F7D /* SignInViewController.swift */; };
-		DD7D48A128645545000C8F7D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D48A028645545000C8F7D /* SignUpViewController.swift */; };
+		DD7D48A128645545000C8F7D /* SignUpViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D48A028645545000C8F7D /* SignUpViewController2.swift */; };
 		DD7D48A4286455C0000C8F7D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D48A3286455C0000C8F7D /* PostViewController.swift */; };
 		DD7D48A6286455F3000C8F7D /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D48A5286455F3000C8F7D /* EditProfileViewController.swift */; };
 		DD7D48A828645620000C8F7D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D48A728645620000C8F7D /* SettingsViewController.swift */; };
@@ -36,9 +39,13 @@
 		DD7D48C12867238A000C8F7D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DD7D48C02867238A000C8F7D /* FirebaseFirestore */; };
 		DD7D48C32867238A000C8F7D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DD7D48C22867238A000C8F7D /* FirebaseStorage */; };
 		DD7D48C728685917000C8F7D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D48C628685917000C8F7D /* AuthService.swift */; };
-		DD7D48C9286859F4000C8F7D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D48C8286859F4000C8F7D /* UserModel.swift */; };
 		DD7D48CB28685B35000C8F7D /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D48CA28685B35000C8F7D /* FirestoreService.swift */; };
 		DD7D48CD28685CCC000C8F7D /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D48CC28685CCC000C8F7D /* StorageService.swift */; };
+		DDA8A6A4288FAC40001B2FD2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA8A6A3288FAC40001B2FD2 /* AuthViewController.swift */; };
+		DDA8A6A8288FB616001B2FD2 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA8A6A7288FB616001B2FD2 /* UIColorExtension.swift */; };
+		DDA8A6AA288FF2EF001B2FD2 /* CodesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA8A6A9288FF2EF001B2FD2 /* CodesCollectionViewController.swift */; };
+		DDA8A6AD288FF79F001B2FD2 /* CodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA8A6AC288FF79F001B2FD2 /* CodeCell.swift */; };
+		DDA8A6AF2893CF0E001B2FD2 /* CustomHeaderForSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA8A6AE2893CF0E001B2FD2 /* CustomHeaderForSection.swift */; };
 		DDF706C82876C623004901D7 /* SFProDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DDF706C62876C623004901D7 /* SFProDisplay-Light.otf */; };
 		DDF706C92876C623004901D7 /* SFProDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DDF706C72876C623004901D7 /* SFProDisplay-Semibold.otf */; };
 		DDF706CB2876C783004901D7 /* SFProDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DDF706CA2876C783004901D7 /* SFProDisplay-Bold.otf */; };
@@ -46,6 +53,9 @@
 
 /* Begin PBXFileReference section */
 		DD599CFC286B635800FC9FB4 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		DD5EC427288569110070B327 /* SignUpViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController3.swift; sourceTree = "<group>"; };
+		DD5EC429288576E30070B327 /* SignUpViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController1.swift; sourceTree = "<group>"; };
+		DD5EC42D2885A6FF0070B327 /* PickerAndTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerAndTextfield.swift; sourceTree = "<group>"; };
 		DD7D487728645185000C8F7D /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7D487A28645185000C8F7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD7D487C28645185000C8F7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +68,7 @@
 		DD7D489728645430000C8F7D /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		DD7D489928645470000C8F7D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DD7D489E28645536000C8F7D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		DD7D48A028645545000C8F7D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DD7D48A028645545000C8F7D /* SignUpViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController2.swift; sourceTree = "<group>"; };
 		DD7D48A3286455C0000C8F7D /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		DD7D48A5286455F3000C8F7D /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		DD7D48A728645620000C8F7D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -70,9 +80,13 @@
 		DD7D48B3286462A7000C8F7D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		DD7D48B528671F84000C8F7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DD7D48C628685917000C8F7D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		DD7D48C8286859F4000C8F7D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		DD7D48CA28685B35000C8F7D /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		DD7D48CC28685CCC000C8F7D /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		DDA8A6A3288FAC40001B2FD2 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		DDA8A6A7288FB616001B2FD2 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		DDA8A6A9288FF2EF001B2FD2 /* CodesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodesCollectionViewController.swift; sourceTree = "<group>"; };
+		DDA8A6AC288FF79F001B2FD2 /* CodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeCell.swift; sourceTree = "<group>"; };
+		DDA8A6AE2893CF0E001B2FD2 /* CustomHeaderForSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderForSection.swift; sourceTree = "<group>"; };
 		DDF706C62876C623004901D7 /* SFProDisplay-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Light.otf"; sourceTree = "<group>"; };
 		DDF706C72876C623004901D7 /* SFProDisplay-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Semibold.otf"; sourceTree = "<group>"; };
 		DDF706CA2876C783004901D7 /* SFProDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.otf"; sourceTree = "<group>"; };
@@ -106,6 +120,35 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		DD5EC426288568DC0070B327 /* SignUpControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD7D48A028645545000C8F7D /* SignUpViewController2.swift */,
+				DD5EC427288569110070B327 /* SignUpViewController3.swift */,
+				DD5EC429288576E30070B327 /* SignUpViewController1.swift */,
+				DDA8A6A9288FF2EF001B2FD2 /* CodesCollectionViewController.swift */,
+			);
+			path = SignUpControllers;
+			sourceTree = "<group>";
+		};
+		DD5EC42B2885A6730070B327 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				DD5EC42C2885A6890070B327 /* SignUpVC */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		DD5EC42C2885A6890070B327 /* SignUpVC */ = {
+			isa = PBXGroup;
+			children = (
+				DDA8A6AB288FF76B001B2FD2 /* Cell */,
+				DD5EC42D2885A6FF0070B327 /* PickerAndTextfield.swift */,
+				DDA8A6AE2893CF0E001B2FD2 /* CustomHeaderForSection.swift */,
+			);
+			path = SignUpVC;
+			sourceTree = "<group>";
+		};
 		DD7D486E28645185000C8F7D = {
 			isa = PBXGroup;
 			children = (
@@ -125,10 +168,10 @@
 		DD7D487928645185000C8F7D /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
-				DD7D48912864524B000C8F7D /* Resources */,
 				DD7D489028645215000C8F7D /* Models */,
 				DD7D488F2864520F000C8F7D /* Views */,
 				DD7D488E28645208000C8F7D /* Controllers */,
+				DD7D48912864524B000C8F7D /* Resources */,
 				DD7D488328645186000C8F7D /* Assets.xcassets */,
 				DD7D488528645186000C8F7D /* LaunchScreen.storyboard */,
 				DD7D488828645186000C8F7D /* Info.plist */,
@@ -148,6 +191,7 @@
 		DD7D488F2864520F000C8F7D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DD5EC42B2885A6730070B327 /* OnBoarding */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,7 +199,6 @@
 		DD7D489028645215000C8F7D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DD7D48C8286859F4000C8F7D /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,6 +211,7 @@
 				DD7D48B528671F84000C8F7D /* GoogleService-Info.plist */,
 				DD599CFB286B633500FC9FB4 /* Fonts */,
 				DD7D48C528685902000C8F7D /* Services */,
+				DDA8A6A6288FB5F4001B2FD2 /* Extensions */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -187,8 +231,9 @@
 		DD7D489D28645504000C8F7D /* OnBoarding */ = {
 			isa = PBXGroup;
 			children = (
-				DD7D489E28645536000C8F7D /* SignInViewController.swift */,
-				DD7D48A028645545000C8F7D /* SignUpViewController.swift */,
+				DDA8A6A3288FAC40001B2FD2 /* AuthViewController.swift */,
+				DDA8A6A5288FB2CC001B2FD2 /* SignInViewController */,
+				DD5EC426288568DC0070B327 /* SignUpControllers */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -226,6 +271,30 @@
 				DD7D48CC28685CCC000C8F7D /* StorageService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		DDA8A6A5288FB2CC001B2FD2 /* SignInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD7D489E28645536000C8F7D /* SignInViewController.swift */,
+			);
+			path = SignInViewController;
+			sourceTree = "<group>";
+		};
+		DDA8A6A6288FB5F4001B2FD2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DDA8A6A7288FB616001B2FD2 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DDA8A6AB288FF76B001B2FD2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DDA8A6AC288FF79F001B2FD2 /* CodeCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD7D48A6286455F3000C8F7D /* EditProfileViewController.swift in Sources */,
+				DDA8A6AA288FF2EF001B2FD2 /* CodesCollectionViewController.swift in Sources */,
 				DD7D4894286453C9000C8F7D /* ExploreViewController.swift in Sources */,
 				DD7D48B4286462A7000C8F7D /* MainTabBarController.swift in Sources */,
 				DD7D48B22864573C000C8F7D /* PublishPostViewController.swift in Sources */,
@@ -322,19 +392,25 @@
 				DD7D487F28645185000C8F7D /* HomeViewController.swift in Sources */,
 				DD7D48C728685917000C8F7D /* AuthService.swift in Sources */,
 				DD7D489828645430000C8F7D /* NotificationsViewController.swift in Sources */,
-				DD7D48C9286859F4000C8F7D /* UserModel.swift in Sources */,
 				DD7D48CD28685CCC000C8F7D /* StorageService.swift in Sources */,
 				DD7D48B0286456FA000C8F7D /* PostEditorViewController.swift in Sources */,
 				DD7D48A4286455C0000C8F7D /* PostViewController.swift in Sources */,
 				DD7D489F28645536000C8F7D /* SignInViewController.swift in Sources */,
+				DD5EC42E2885A6FF0070B327 /* PickerAndTextfield.swift in Sources */,
 				DD7D48AE286456AB000C8F7D /* SearchResultViewController.swift in Sources */,
+				DD5EC428288569110070B327 /* SignUpViewController3.swift in Sources */,
 				DD7D48CB28685B35000C8F7D /* FirestoreService.swift in Sources */,
 				DD7D489A28645470000C8F7D /* ProfileViewController.swift in Sources */,
+				DDA8A6A4288FAC40001B2FD2 /* AuthViewController.swift in Sources */,
+				DDA8A6AF2893CF0E001B2FD2 /* CustomHeaderForSection.swift in Sources */,
 				DD7D48AC28645677000C8F7D /* SearchViewController.swift in Sources */,
-				DD7D48A128645545000C8F7D /* SignUpViewController.swift in Sources */,
+				DDA8A6AD288FF79F001B2FD2 /* CodeCell.swift in Sources */,
+				DDA8A6A8288FB616001B2FD2 /* UIColorExtension.swift in Sources */,
+				DD7D48A128645545000C8F7D /* SignUpViewController2.swift in Sources */,
 				DD7D487B28645185000C8F7D /* AppDelegate.swift in Sources */,
 				DD7D487D28645185000C8F7D /* SceneDelegate.swift in Sources */,
 				DD7D48AA28645650000C8F7D /* ListViewController.swift in Sources */,
+				DD5EC42A288576E30070B327 /* SignUpViewController1.swift in Sources */,
 				DD7D48A828645620000C8F7D /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,7 +560,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,7 +589,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

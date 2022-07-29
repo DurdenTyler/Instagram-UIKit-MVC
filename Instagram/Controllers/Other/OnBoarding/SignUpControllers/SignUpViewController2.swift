@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController2: UIViewController {
     
     private let button_BackToSignIn: UIButton = {
         let button = UIButton(type: .system)
@@ -48,7 +48,7 @@ class SignUpViewController: UIViewController {
         textfield.textColor = .darkText
         textfield.layer.cornerRadius = 5
         textfield.clearButtonMode = .always
-        textfield.returnKeyType = .done
+        textfield.returnKeyType = .next
         textfield.borderStyle = .roundedRect
         textfield.font = UIFont(name: "SFProDisplay-Light", size: 15)
         textfield.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textfield.frame.height))
@@ -73,6 +73,8 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         setupViews()
         setConstraints()
+        addTaps()
+        setDelegates()
     }
     
     private func setupViews() {
@@ -89,14 +91,37 @@ class SignUpViewController: UIViewController {
     }
     
     @objc private func func_Next() {
-        ///
+        let vc = SignUpViewController2()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+    
+    private func setDelegates() {
+        textField_login.delegate = self
+    }
+    
+    private func addTaps() {
+        let tapScreen = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(tapScreen)
+        
+        let swipeScreen = UISwipeGestureRecognizer(target: self, action: #selector(swipeHideKeyboard))
+        swipeScreen.cancelsTouchesInView = false
+        view.addGestureRecognizer(swipeScreen)
+    }
+    
+    @objc private func hideKeyboard() {
+        view.endEditing(true)
+    }
+    
+    @objc private func swipeHideKeyboard() {
+        view.endEditing(true)
     }
 
 
 }
 
 // MARK: Constraints
-extension SignUpViewController {
+extension SignUpViewController2 {
     
     private func setConstraints() {
 
@@ -114,21 +139,31 @@ extension SignUpViewController {
         NSLayoutConstraint.activate([
             text_info.topAnchor.constraint(equalTo: text_CreateName.bottomAnchor, constant: 15),
             text_info.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-            text_info.widthAnchor.constraint(equalToConstant: 300)
+            text_info.widthAnchor.constraint(equalToConstant: 350)
         ])
         
         NSLayoutConstraint.activate([
             textField_login.topAnchor.constraint(equalTo: text_info.bottomAnchor, constant: 20),
             textField_login.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-            textField_login.widthAnchor.constraint(equalToConstant: 300),
+            textField_login.widthAnchor.constraint(equalToConstant: 350),
             textField_login.heightAnchor.constraint(equalToConstant: 40)
         ])
         
         NSLayoutConstraint.activate([
             button_Next.topAnchor.constraint(equalTo: textField_login.bottomAnchor, constant: 20),
             button_Next.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-            button_Next.widthAnchor.constraint(equalToConstant: 300),
+            button_Next.widthAnchor.constraint(equalToConstant: 350),
             button_Next.heightAnchor.constraint(equalToConstant: 40)
         ])
+    }
+}
+
+// MARK: UITextFieldDelegate
+extension SignUpViewController2: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let vc = SignUpViewController2()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+        return true
     }
 }
